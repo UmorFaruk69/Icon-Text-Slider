@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.animation-text {
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+  padding: 10px 0;
+  white-space: nowrap;
+
+}
+.animation-slide img {
+  width: 50px;
+  margin: 0 12px;
+}
+.animation-slide {
+  display: inline-block;
+  animation: 5s slide infinite linear;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.animation-content {
+  display: inline-block;
+  width: 400px;
+}
+.vertical-center-text {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
